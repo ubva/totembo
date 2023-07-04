@@ -1,0 +1,329 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ol,ul{
+    margin: 0;
+    padding: 0%;
+    list-style: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.visually-hidden{
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+.line{
+    border-bottom: 3px solid 
+    rgba(0, 0, 0, 1);
+}
+
+
+/* HEADER */
+
+.headerBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+    /* border-bottom: 3px solid 
+    rgba(0, 0, 0, 1); */
+}
+.headerLogo{
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 23px;
+    color: 
+    rgba(0, 0, 0, 0.79);
+}
+.headerList{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.headerItemLink{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: grey;
+}
+.iconList{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* MAIN */
+.hero{
+    margin-top: 20px;
+}
+.carts{
+    position: relative;
+}
+.cartList{
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+}
+.cartItems{
+    width: 526px;
+    background-color: rgba(132, 132, 132, 0.3);
+    border-radius: 30px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    box-shadow: 8px 5px 5px rgb(174, 172, 172);
+}
+.cartItems:before{
+    position: absolute;
+    content: "50%";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+    background-color: 
+    rgba(50, 50, 50, 0.902);
+    padding: 10px 25px;
+    border-radius: 10px;
+    position: absolute;
+    left: 33px;
+    top: 33px;
+}
+.cartItems::after{
+    position: absolute;
+    content: "20%";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+    background-color: 
+    rgba(50, 50, 50, 0.902);
+    padding: 10px 25px;
+    border-radius: 10px;
+    position: absolute;
+    left: 33px;
+    bottom: 196px;
+}
+
+.innerCart{
+    width: 746px;
+    height: 500px;
+    background-color: rgba(132, 132, 132, 0.3);
+    /* padding: 85px 0; */
+   border-radius: 30px;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow:  8px 5px 5px rgb(174, 172, 172);
+   position: relative;
+}
+.cartDiv{
+    text-align: center;
+    /* padding-left: 30px; */
+}
+.cartWrap::before{
+    position: absolute;
+    content: "50%";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+    background-color: 
+    rgba(50, 50, 50, 0.902);
+    padding: 10px 25px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.cartImage{
+    margin-left: 50px;
+}
+.watchesText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: 
+    rgba(0, 0, 0, 0.79);
+}
+.mainText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: 
+    rgba(0, 0, 0, 0.79);
+    margin: 10px 0;
+}
+
+/* sales-section */
+.sales{
+    margin-top: 30px;
+    text-align: center;
+}
+.salesTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: 
+    rgba(0, 0, 0, 0.79);
+    margin: 10px 0;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.salesList{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.salesItem{
+    width: 100%;
+    max-width: 400px;
+    background-color: 
+    rgba(132, 132, 132, 0.3);
+    margin: 15px;
+    text-align: center;
+    padding: 40px 40px 30px;
+    border-radius: 30px;
+    position: relative;
+    box-shadow:  8px 5px 5px rgb(174, 172, 172);
+}
+.salesSpn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+    background-color: 
+    rgba(50, 50, 50, 0.902);
+    padding: 10px 25px;
+    border-radius: 10px;
+    position: absolute;
+    left: 22px;
+    top: 22px;
+}
+.activeIcons{
+    /* flex-direction: column; */
+
+}
+.salesBtn{
+    width: 50px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+    border: transparent;
+    display: block;
+    margin: 10px;
+    position: absolute;
+    right: 8px;
+    top: 60px;
+
+}
+.salesBtn:nth-child(1){
+    top: 10px;
+    right: 8px;
+}
+.salesText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: 
+    rgba(0, 0, 0, 0.644);
+    margin: 20px 0;
+}
+.salesBrands{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: 
+    rgba(0, 0, 0, 0.79);
+}
+.nextBtn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    background-color: transparent;
+    border: transparent;
+    color: 
+    rgba(0, 0, 0, 0.79);
+    margin: 0 auto;
+}
+
+/* FOOTER */
+.footer{
+    background-color: 
+    rgba(50, 50, 50, 1);
+    padding: 30px;
+    margin-top: 30px;
+}
+.footerWrapper{
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+}
+.footerLogo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 23px;
+    color: #fff;
+}
+.footerSpn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.557);
+}
+.footerList{
+    margin-top: 30px;
+}
+.footerItems{
+    margin: 15px;
+}
+.footerLinks{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.767);
+}
+.footerInfo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    width: 526px;
+    color: rgba(255, 255, 255, 0.767) ;
+    margin: 30px 0;
+}
+.footerSpn{
+    display: block;
+    margin-bottom: 30px;
+}
+.socialLinks{
+    margin: 12px;
+}
